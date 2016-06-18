@@ -1,0 +1,35 @@
+Concept:
+--Direct head-to-head combat helicopter game featuring advanced controls, basic AI/pathfinding, custom terrain, particle effects, score, UI, menu systems and win/loss conditions.
+
+Appeal:
+--Want a tactical approach to gaming
+--Enjoy flight simulation + combat
+--Movement in 3d space
+--Out-play a friend (pvp?)
+
+
+External Requirements
+Graphics: 
+     Helicopter
+     Nature Meshes (trees, rocks, etc.)
+     Urban Meshes (houses, streets, cars, etc.
+SFX: 
+     Helicopter Engine/Propellers
+     Machine Gun fire
+     Rocket fire
+     Explosion
+     Crash sound
+     Ambient music (tense, edgy)
+
+
+Out-of-Scope
+     Multiple helicopter types
+     Advanced AI
+     Alternative game modes
+     High definition models/materials
+     Multiple enemy types
+     "Flashy" UI
+     "Polished" Menu system
+     Graphical options
+     Advanced particles
+     
