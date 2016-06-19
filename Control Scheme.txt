@@ -1,8 +1,8 @@
-Forward
+Accelerate
      Keyboard/Mouse: W
      Controller: Left Analog U
 
-Backward
+Reverse
      Keyboard/Mouse: S
      Controller: Left Analog D
 
@@ -14,10 +14,10 @@ Rotate Left/Right (Yaw)
      Keyboard/Mouse: Mouse Horizontal
      Controller: Right Analog L/R
 
-Pitch Up/Down (Pitch)
+Roll Up/Down (Pitch)
      Keyboard/Mouse: Mouse Vertical
      Controller: Right Analog U/D
 
-Roll Left/Right (Roll)
+Pitch Left/Right (Roll)
      Keyboard/Mouse: Q/E
      Controller: Bumper L/R
