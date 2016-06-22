@@ -15,7 +15,9 @@ class BATTLECHOPPER_API AAIController_Chopper : public AAIController
 	GENERATED_BODY()
 public:
 	virtual void BeginPlay() override;
-	AChopper* GetControlledChopper() const;
+	
 
 private:
+	AChopper* GetControlledChopper() const;
+	AChopper* GetPlayerChopper() const;
 };
