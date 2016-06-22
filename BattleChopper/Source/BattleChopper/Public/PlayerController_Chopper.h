@@ -15,7 +15,9 @@ class BATTLECHOPPER_API APlayerController_Chopper : public APlayerController
 	GENERATED_BODY()
 public:
 	virtual void BeginPlay() override;
-	AChopper* GetControlledChopper() const;
+	virtual void Tick(float DeltaSeconds) override;
 
 private:
+	AChopper* GetControlledChopper() const;
+	void AimAtCrossHairLocation() const;
 };
