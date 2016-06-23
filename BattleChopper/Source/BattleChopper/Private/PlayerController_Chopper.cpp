@@ -7,8 +7,8 @@ void APlayerController_Chopper::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	AChopper* PlayerChopper = GetControlledChopper();
-	if (!PlayerChopper)
+	ControlledChopper = GetControlledChopper();
+	if (!ControlledChopper)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s has not possessed an actor."), *GetName());
 	}
@@ -49,7 +49,9 @@ bool APlayerController_Chopper::LineTraceThroughCrosshairs(FVector & Out_AimedAt
 	FVector DeprojectedDirection;
 	if (GetDeprojectedDirection(DeprojectedDirection))
 	{
-
+		FHitResult HitResults;
+		DrawDebugLine(GetWorld(), ControlledChopper->GetActorLocation(), (ControlledChopper->GetActorLocation() + (DeprojectedDirection * ChopperTargetRange)), FColor(0, 0, 255, 255), false, 0.0f, 0, 10.0f);
+//		GetWorld()->LineTraceSingleByChannel(HitResults, ControlledChopper->GetActorLocation(), (ControlledChopper->GetActorLocation() + (DeprojectedDirection * ChopperTargetRange)), ECollisionChannel::ECC_Visibility);
 		//Use DeprojectedDirection to LineTrace from cross hair to point in map, report hit
 		UE_LOG(LogTemp, Warning, TEXT("Direction: %s"), *DeprojectedDirection.ToString());
 		WasFunctionSuccessful = true;

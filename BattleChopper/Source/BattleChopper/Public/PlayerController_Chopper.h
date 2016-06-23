@@ -20,6 +20,8 @@ public:
 private:
 	UPROPERTY(EditAnywhere) float CrossHairPositionX = 0.5f;
 	UPROPERTY(EditAnywhere) float CrossHairPositionY = 0.33333f;
+	UPROPERTY(EditAnywhere) float ChopperTargetRange = 1000000.0f;
+	AChopper* ControlledChopper = nullptr;
 	AChopper* GetControlledChopper() const;
 	void AimAtCrossHairLocation() const;
 
