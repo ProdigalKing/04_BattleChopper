@@ -18,6 +18,14 @@ public:
 	virtual void Tick(float DeltaSeconds) override;
 
 private:
+	UPROPERTY(EditAnywhere) float CrossHairPositionX = 0.5f;
+	UPROPERTY(EditAnywhere) float CrossHairPositionY = 0.33333f;
 	AChopper* GetControlledChopper() const;
 	void AimAtCrossHairLocation() const;
+
+	//Line-Trace from crosshair in order to determine what controlled chopper is aiming at.
+	bool LineTraceThroughCrosshairs(FVector& Out_AimedAtLocation) const;
+
+	//Get de-projected direction to use for line-tracing.
+	bool GetDeprojectedDirection(FVector& Out_DeprojectedLocation) const;
 };
